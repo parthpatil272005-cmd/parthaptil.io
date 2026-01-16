@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIFAN 2025</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Restore stacked box layout */
+        .info-box {
+            display: block !important;
+            width: 100% !important;
+            margin: 14px 0 !important;
+            padding: 14px 22px !important;
+            background: rgba(255,255,255,0.06);
+            border-left: 4px solid #00eaff;
+            border-radius: 10px;
+            color: #e3e3e3;
+            line-height: 1.6;
+            box-shadow: 0 0 10px rgba(0,200,255,0.2);
+            transition: 0.25s ease;
+        }
+        .info-box:hover {
+            border-left-color: #ff00c8;
+            box-shadow: 0 0 18px rgba(255,0,200,0.35);
+            transform: scale(1.02);
+        }
+
+        /* Gallery section */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            margin-top: 18px;
+        }
+
+        .gallery-item {
+            height: 160px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(0,200,255,0.25);
+            border-radius: 12px;
+            box-shadow: 0 0 18px rgba(0,200,255,0.25);
+            backdrop-filter: blur(6px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 1rem;
+            transition: 0.25s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            border-color: #ff00c8;
+            box-shadow: 0 0 25px rgba(255,0,200,0.4);
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+<a href="projects.html" style="color:#00eaff; margin-left:20px; text-decoration:none;">← Back</a>
+
+<h1>TIFAN 2025</h1>
+
+<div class="project-details-box">
+
+    <!-- OVERVIEW -->
+    <h2 class="sub-project-title">Overview</h2>
+    <p class="info-box">
+        TIFAN 2025 was my first major engineering project during my second year of college. We restarted the entire design due to previous prototype failures in seed handling, alignment, and mechanical synchronization.
+    </p>
+
+    <!-- DESIGN BREAKDOWN -->
+    <h2 class="sub-project-title">Design Breakdown</h2>
+
+    <div class="info-box"><strong>Picking System:</strong> Lifts seedlings without damaging roots.</div>
+    <div class="info-box"><strong>Conveying System:</strong> Transfers seedlings smoothly.</div>
+    <div class="info-box"><strong>Planting System:</strong> Drops seedlings at consistent spacing.</div>
+
+    <!-- MECHANISMS -->
+    <h2 class="sub-project-title">Mechanisms I Designed</h2>
+
+    <div class="info-box">
+        <strong>Geneva Mechanism for Conveyor Indexing</strong><br>
+        Ensured precise rotational steps and synced movement <br><br>
+        ✔ Accurate indexing<br>
+        ✔ Smooth synchronization<br>
+        ✔ Reduced backlash
+    </div>
+
+    <div class="info-box">
+        <strong>Lead Screw System (Vertical + Horizontal Movement)</strong><br>
+        Designed dual-screw motion using NEMA 17 & 23 motors.<br><br>
+        ✔ High accuracy movement <br>
+        ✔ Durable in dusty field conditions <br>
+        ✔ Controlled gripper travel
+    </div>
+
+    <!-- ELECTRONICS -->
+    <h2 class="sub-project-title">Electronic System Selection</h2>
+
+    <div class="info-box">
+        ✔ PLC for timing synchronization <br>
+        ✔ Stepper motors (NEMA 17/23) <br>
+        ✔ Optical sensors for position tracking <br>
+        ✔ Relay modules for actuation control
+    </div>
+
+    <!-- CHALLENGES -->
+    <h2 class="sub-project-title">Challenges & Redesign</h2>
+
+    <div class="info-box">
+        <strong>Main Issues:</strong><br>
+        ✔ Seedling damage during pickup<br>
+        ✔ Conveyor misalignment<br>
+        ✔ Timing mismatch<br>
+        ✔ Jamming during continuous operation
+    </div>
+
+    <div class="info-box">
+        <strong>Fixes Implemented:</strong><br>
+        ✔ Redesigned gripper geometry<br>
+        ✔ Improved conveyor alignment<br>
+        ✔ PLC feedback loop<br>
+        ✔ Lead screw replacement for durability
+    </div>
+
+    <!-- MY ROLE -->
+    <h2 class="sub-project-title">My Role</h2>
+
+    <div class="info-box">
+        I contributed to mechanical design, system synchronization, and electronic selection.  
+        My major responsibilities included:
+        <br><br>
+        ✔ Designing Geneva mechanism for conveyor indexing  
+        <br>✔ Developing lead-screw based vertical and horizontal motion  
+        <br>✔ Selecting NEMA stepper motors & electronic components  
+        <br>✔ Precision tuning of pickup mechanism to reduce seedling damage  
+        <br>✔ Testing & analyzing system timing via PLC feedback  
+        <br>✔ Troubleshooting mechanical failures in field conditions  
+        <br><br>
+        I worked closely with seniors and faculty to refine the system until testing showed stable and reliable performance.
+    </div>
+
+    <!-- GALLERY -->
+    <h2 class="sub-project-title">Gallery</h2>
+
+    <div class="gallery-grid">
+        <div class="gallery-item">Image 1</div>
+        <div class="gallery-item">Image 2</div>
+        <div class="gallery-item">Image 3</div>
+        <div class="gallery-item">Image 4</div>
+    </div>
+<!-- ACHIEVEMENTS -->
+<h2 class="sub-project-title">Achievements</h2>
+
+<div class="info-box">
+    <strong>1st Place – Marketing Round</strong><br>
+    Awarded for clear presentation, strong value proposition, and demonstrating real usability for farmers.
+</div>
+
+<div class="info-box">
+    <strong>1st Place – Design Round</strong><br>
+    Recognized for complete mechanical redesign, improved durability, and innovative variable-pitch gripper system.
+</div>
+
+<div class="info-box">
+    <strong>1st Place – Proof of Concept Round</strong><br>
+    Secured top position by validating system feasibility, functional working model, and synchronized picking/planting concept.
+</div>
+
+<div class="info-box">
+    <strong>Excellent Field Performance</strong><br>
+    Performed reliably during evaluation with smooth coordination between the picking, conveying, and planting systems.
+</div>
+
+<div class="info-box">
+    <strong>Maintained High Spooling Accuracy</strong><br>
+    Conveyor and Geneva mechanism achieved consistent indexing with minimal deviation even under continuous operation.
+</div>
+
+<div class="info-box">
+    <strong>Balanced System Efficiency</strong><br>
+    Achieved strong output with low power consumption using NEMA 17/23 motors, servo gripper, and PLC timing control.
+</div>
+
+</div>
+
+</body>
+</html>
